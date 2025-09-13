@@ -1,5 +1,10 @@
 [
-  {"rank":1,"name":"Alice","fans":150,"fansGained":20},
-  {"rank":2,"name":"Bob","fans":120,"fansGained":15},
-  {"rank":3,"name":"Charlie","fans":100,"fansGained":10}
+  {"rank":1,"name":"Aerate","fans":116000562,"fansGained":500000},
+  {"rank":2,"name":"Vetala","fans":88050683,"fansGained":450000},
+  {"rank":3,"name":"Keeves","fans":86018162,"fansGained":400000},
+  {"rank":4,"name":"Bagel","fans":81968999,"fansGained":350000},
+  {"rank":5,"name":"Crabitalism","fans":77230535,"fansGained":300000},
+  {"rank":6,"name":"ScarletWing","fans":70893040,"fansGained":250000},
+  {"rank":7,"name":"SHG","fans":69722363,"fansGained":200000},
+  {"rank":8,"name":"X","fans":65000000,"fansGained":150000}
 ]

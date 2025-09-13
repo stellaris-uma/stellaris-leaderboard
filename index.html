@@ -3,11 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lunaris Fan Leaderboard</title>
+  <title>Stellaris Fan Leaderboard</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
+    }
+
+    th, td {
+      padding: 12px 20px;
+      border: 1px solid #444;
+    }
+
+    th {
+      background-color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+  </style>
 </head>
 <body>
-  <h1>Lunaris Fan Leaderboard</h1>
+  <h1>Stellaris Fan Leaderboard</h1>
   <table id="leaderboard">
     <thead>
       <tr>
@@ -20,6 +53,25 @@
     <tbody></tbody>
   </table>
 
-  <script src="script.js"></script>
+  <script>
+    // Fetch leaderboard data from data.json
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        const tbody = document.querySelector('#leaderboard tbody');
+        tbody.innerHTML = ''; // Clear table first
+        data.forEach(player => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${player.rank}</td>
+            <td>${player.name}</td>
+            <td>${player.fans}</td>
+            <td>${player.fansGained}</td>
+          `;
+          tbody.appendChild(row);
+        });
+      })
+      .catch(err => console.error('Error loading leaderboard:', err));
+  </script>
 </body>
 </html>
