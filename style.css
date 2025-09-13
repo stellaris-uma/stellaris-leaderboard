@@ -3,72 +3,65 @@
 /* Body styling with background image */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
+  text-align: center;
   padding: 20px;
   color: #000;
 
-  display: flex;
-  justify-content: center; /* center the table horizontally */
   background-image: url('background.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
 
-/* Table container for scroll */
-.table-container {
-  max-width: 800px; /* narrower table */
-  width: 100%;
-  overflow-x: auto; /* horizontal scrolling if needed */
-  background-color: rgba(255, 255, 255, 0.9); /* slightly transparent */
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center; /* Center table horizontally */
 }
 
 /* Table styling */
 table {
-  width: 100%;
+  width: 60%; /* Make table narrower */
   border-collapse: collapse;
-  margin: 0 auto;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Table headers */
-th {
-  background-color: #333;
-  color: #fff;
-  padding: 12px;
-  text-align: center;
-  position: sticky; /* optional: keeps headers visible while scrolling */
-  top: 0;
-  z-index: 2;
-}
-
-/* Table cells */
-td {
+/* Table header and cells */
+th, td {
   padding: 12px;
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
-/* Hover effect for rows */
+th {
+  background-color: #333;
+  color: #fff;
+}
+
 tr:hover {
   background-color: #f1f1f1;
 }
 
-/* Fans Gained column styling - dynamic color handled in script.js */
+/* Fans Gained column styling */
 td.fans-gained {
   font-weight: bold;
 }
 
-/* Medal colors for top 3 rows */
-tr:nth-child(1) {
-  background-color: #FFD700; /* Gold */
+/* Top 3 row medals */
+tr.gold {
+  background-color: #FFD700 !important; /* Gold */
+  color: #000;
+  font-weight: bold;
 }
-tr:nth-child(2) {
-  background-color: #C0C0C0; /* Silver */
+
+tr.silver {
+  background-color: #C0C0C0 !important; /* Silver */
+  color: #000;
+  font-weight: bold;
 }
-tr:nth-child(3) {
-  background-color: #CD7F32; /* Bronze */
+
+tr.bronze {
+  background-color: #CD7F32 !important; /* Bronze */
+  color: #000;
+  font-weight: bold;
 }

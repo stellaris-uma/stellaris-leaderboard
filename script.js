@@ -22,6 +22,11 @@ fetch('data.json')
     data.forEach((player, index) => {
       const row = document.createElement('tr');
 
+      // Assign medal classes for top 3
+      if (index === 0) row.classList.add('gold');
+      else if (index === 1) row.classList.add('silver');
+      else if (index === 2) row.classList.add('bronze');
+
       // Fans Gained color: light green if > 0, black otherwise
       const fansGainedColor = player.fansGained > 0 ? '#32CD32' : '#000000';
 
@@ -33,6 +38,7 @@ fetch('data.json')
           ${player.fansGained.toLocaleString()}
         </td>
       `;
+
       tableBody.appendChild(row);
     });
   })
