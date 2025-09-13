@@ -50,8 +50,6 @@ table {
 /* ✅ Table header styling */
 th {
   padding: 12px;
-  background-color: #FFD700; /* Gold background */
-  color: #fff; /* White text */
   font-weight: bold;
   text-transform: uppercase;
 }
