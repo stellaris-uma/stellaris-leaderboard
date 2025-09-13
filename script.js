@@ -28,7 +28,7 @@ fetch('data.json')
       else if (index === 2) row.classList.add('bronze');
 
       // Fans Gained color: light green if > 0, black otherwise
-      const fansGainedColor = player.fansGained > 0 ? '#32CD32' : '#000000';
+      const fansGainedColor = player.fansGained > 0 ? '#32CD32' : '#d80000ff';
 
       row.innerHTML = `
         <td>${index + 1}</td> <!-- Rank -->
