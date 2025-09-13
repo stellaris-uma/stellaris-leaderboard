@@ -1,11 +1,16 @@
 fetch('data.json')
-  .then(response => response.json())
+  .then(res => res.json())
   .then(data => {
     const tbody = document.querySelector('#leaderboard tbody');
-    tbody.innerHTML = ''; // clear existing rows
+    tbody.innerHTML = ''; // Clear table first
     data.forEach(player => {
       const row = document.createElement('tr');
-      row.innerHTML = `<td>${player.rank}</td><td>${player.name}</td><td>${player.fans}</td>`;
+      row.innerHTML = `
+        <td>${player.rank}</td>
+        <td>${player.name}</td>
+        <td>${player.fans}</td>
+        <td>${player.fansGained}</td> <!-- new column -->
+      `;
       tbody.appendChild(row);
     });
   })

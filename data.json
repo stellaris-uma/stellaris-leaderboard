@@ -1,5 +1,5 @@
 [
-  {"rank":1,"name":"Alice","fans":150},
-  {"rank":2,"name":"Bob","fans":120},
-  {"rank":3,"name":"Charlie","fans":100}
+  {"rank":1,"name":"Alice","fans":150,"fansGained":20},
+  {"rank":2,"name":"Bob","fans":120,"fansGained":15},
+  {"rank":3,"name":"Charlie","fans":100,"fansGained":10}
 ]
