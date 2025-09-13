@@ -4,31 +4,43 @@
 body {
   font-family: Arial, sans-serif;
   color: #000;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all content horizontally */
+
+  /* Background image with opacity using pseudo-element */
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('background.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center all content horizontally */
-  padding: 20px;
-  margin: 0;
+  opacity: 0.8; /* 80% opacity */
+  z-index: -1;
 }
 
 /* Header styling */
 h1 {
   text-align: center;
-  color: #FFD700; /* Dark yellow */
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  font-size: 2.5em; /* Bigger font */
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Soft text shadow */
 }
 
 /* Table styling */
 table {
   width: 50%; /* Narrower table */
-  max-width: 700px; /* Optional max width */
+  max-width: 700px;
   border-collapse: collapse;
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.95);
@@ -36,19 +48,20 @@ table {
   text-align: center;
 }
 
-/* Table header and cells */
-th, td {
+/* Table header styling */
+th {
+  padding: 12px;
+  background-color: #FFD700; /* Gold */
+  color: #000;
+}
+
+/* Table cells */
+td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
 
-/* Table header color */
-th {
-  background-color: #B8860B; /* Dark yellow */
-  color: #fff;
-}
-
-/* Row hover effect */
+/* Hover effect */
 tr:hover {
   background-color: rgba(200,200,200,0.3);
 }
@@ -58,21 +71,21 @@ td.fans-gained {
   font-weight: bold;
 }
 
-/* Top 3 row medals */
+/* Top 3 row medals with 60% opacity */
 tr.gold {
-  background-color: #FFFACD !important; /* Light gold for top 1 */
+  background-color: rgba(255, 215, 0, 0.6) !important; /* Gold with 60% opacity */
   color: #000;
   font-weight: bold;
 }
 
 tr.silver {
-  background-color: #C0C0C0 !important; /* Silver for top 2 */
+  background-color: rgba(192, 192, 192, 0.6) !important; /* Silver with 60% opacity */
   color: #000;
   font-weight: bold;
 }
 
 tr.bronze {
-  background-color: #CD7F32 !important; /* Bronze for top 3 */
+  background-color: rgba(205, 127, 50, 0.6) !important; /* Bronze with 60% opacity */
   color: #000;
   font-weight: bold;
 }
