@@ -3,44 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stellaris Fan Leaderboard</title>
+  <title>Stellaris Club Fan Leaderboard</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    /* Basic table styling */
     body {
-      background-color: #1a1a1a;
-      color: #fff;
       font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      margin-top: 20px;
+      background-color: #f5f5f5;
+      padding: 20px;
+      color: #000;
     }
 
     table {
-      margin: 20px auto;
+      width: 100%;
       border-collapse: collapse;
-      width: 80%;
+      margin-top: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     th, td {
-      padding: 12px 20px;
-      border: 1px solid #444;
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
     }
 
     th {
       background-color: #333;
+      color: #fff;
     }
 
-    tr:nth-child(even) {
-      background-color: #2a2a2a;
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Optional: Fans Gained column default styling, dynamic color handled in script.js */
+    td.fans-gained {
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>Stellaris Fan Leaderboard</h1>
+
+  <h1>Stellaris Club Fan Leaderboard</h1>
+
   <table id="leaderboard">
     <thead>
       <tr>
@@ -50,28 +56,11 @@
         <th>Fans Gained</th>
       </tr>
     </thead>
-    <tbody></tbody>
+    <tbody>
+      <!-- Rows will be injected here by script.js -->
+    </tbody>
   </table>
 
-  <script>
-    // Fetch leaderboard data from data.json
-    fetch('data.json')
-      .then(res => res.json())
-      .then(data => {
-        const tbody = document.querySelector('#leaderboard tbody');
-        tbody.innerHTML = ''; // Clear table first
-        data.forEach(player => {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td>${player.rank}</td>
-            <td>${player.name}</td>
-            <td>${player.fans}</td>
-            <td>${player.fansGained}</td>
-          `;
-          tbody.appendChild(row);
-        });
-      })
-      .catch(err => console.error('Error loading leaderboard:', err));
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
