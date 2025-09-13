@@ -3,10 +3,7 @@
 /* Body styling with background image */
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
   color: #000;
-
   background-image: url('background.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
@@ -14,32 +11,46 @@ body {
   background-attachment: fixed;
 
   display: flex;
-  justify-content: center; /* Center table horizontally */
+  flex-direction: column;
+  align-items: center; /* Center all content horizontally */
+  padding: 20px;
+  margin: 0;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  color: #FFD700; /* Dark yellow */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
 }
 
 /* Table styling */
 table {
-  width: 60%; /* Make table narrower */
+  width: 50%; /* Narrower table */
+  max-width: 700px; /* Optional max width */
   border-collapse: collapse;
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
 /* Table header and cells */
 th, td {
-  padding: 12px;
-  text-align: center;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
 }
 
+/* Table header color */
 th {
-  background-color: #333;
+  background-color: #B8860B; /* Dark yellow */
   color: #fff;
 }
 
+/* Row hover effect */
 tr:hover {
-  background-color: #f1f1f1;
+  background-color: rgba(200,200,200,0.3);
 }
 
 /* Fans Gained column styling */
@@ -49,19 +60,19 @@ td.fans-gained {
 
 /* Top 3 row medals */
 tr.gold {
-  background-color: #FFD700 !important; /* Gold */
+  background-color: #FFFACD !important; /* Light gold for top 1 */
   color: #000;
   font-weight: bold;
 }
 
 tr.silver {
-  background-color: #C0C0C0 !important; /* Silver */
+  background-color: #C0C0C0 !important; /* Silver for top 2 */
   color: #000;
   font-weight: bold;
 }
 
 tr.bronze {
-  background-color: #CD7F32 !important; /* Bronze */
+  background-color: #CD7F32 !important; /* Bronze for top 3 */
   color: #000;
   font-weight: bold;
 }
