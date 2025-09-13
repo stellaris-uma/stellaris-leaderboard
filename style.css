@@ -7,7 +7,7 @@ body {
   color: #000;
 
   /* Background image settings */
-  background-image: url('bg.jpg'); /* Replace with your image file */
+  background-image: url('background.jpg'); /* Replace with your image file */
   background-size: cover;       /* Cover the entire viewport */
   background-position: center;  /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
