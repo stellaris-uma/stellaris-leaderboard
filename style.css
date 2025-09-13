@@ -1,56 +1,47 @@
-/* General page styling */
-body {
-  background-color: #1a1a1a;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
+/* style.css */
 
-h1 {
-  margin-top: 20px;
-  font-size: 2em;
+/* Body styling with background image */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #000;
+
+  /* Background image settings */
+  background-image: url('bg.jpg'); /* Replace with your image file */
+  background-size: cover;       /* Cover the entire viewport */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-attachment: fixed; /* Keep image fixed while scrolling */
 }
 
 /* Table styling */
 table {
-  margin: 20px auto;
+  width: 100%;
   border-collapse: collapse;
-  width: 80%;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency so background shows */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Table header and cells */
 th, td {
-  padding: 12px 20px;
-  border: 1px solid #444;
+  padding: 12px;
   text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
+/* Table header background */
 th {
   background-color: #333;
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #2a2a2a;
-}
-
-tr:nth-child(odd) {
-  background-color: #1f1f1f;
+  color: #fff;
 }
 
 /* Hover effect for rows */
 tr:hover {
-  background-color: #444;
+  background-color: #f1f1f1;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  table {
-    width: 95%;
-  }
-
-  th, td {
-    padding: 10px;
-  }
+/* Fans Gained column styling - dynamic color handled in script.js */
+td.fans-gained {
+  font-weight: bold;
 }
