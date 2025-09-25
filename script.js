@@ -28,7 +28,7 @@ fetch('data.json')
       else if (index === 2) row.classList.add('bronze');
 
       // Fans Gained color: light green if > 0, red if < 0, black otherwise
-      const fansGainedColor = player.fansGained > 0 ? '#32CD32' : '#d80000ff';
+      const fansGainedColor = player.fansGained > 0 ? '#0c5f0cff' : '#830202ff';
       const fansGainedText =
         player.fansGained > 0
           ? `+${player.fansGained.toLocaleString()}`
