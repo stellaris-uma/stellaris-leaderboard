@@ -45,11 +45,6 @@
     "currentFans": 98949549
   },
   {
-    "name": "Carrot",
-    "initialFans": 97781113,
-    "currentFans": 97781113
-  },
-  {
     "name": "kaycey",
     "initialFans": 97133726,
     "currentFans": 97133726
@@ -70,14 +65,14 @@
     "currentFans": 89167589
   },
   {
-    "name": "Serac",
-    "initialFans": 88088345,
-    "currentFans": 88088345
-  },
-  {
     "name": "shadow",
     "initialFans": 88007330,
     "currentFans": 88007330
+  },
+  {
+    "name": "Serac",
+    "initialFans": 88088345,
+    "currentFans": 88088345
   },
   {
     "name": "HyuzShowSpeed",
@@ -103,11 +98,6 @@
     "name": "Cameronbear",
     "initialFans": 69361170,
     "currentFans": 69361170
-  },
-  {
-    "name": "Hilaos",
-    "initialFans": 68912133,
-    "currentFans": 68912133
   },
   {
     "name": "MAO",
@@ -138,5 +128,20 @@
     "name": "lie",
     "initialFans": 40911232,
     "currentFans": 40911232
+  },
+  {
+    "name": "Carrot",
+    "initialFans": 97781113,
+    "currentFans": 97781113
+  },
+  {
+    "name": "Hilaos",
+    "initialFans": 68912133,
+    "currentFans": 68912133
+  },
+  {
+    "name": "Jaya",
+    "initialFans": 109362165,
+    "currentFans": 109362165
   }
 ]
