@@ -1,152 +1,142 @@
 [
   {
     "name": "Aerate",
-    "initialFans": 116000562,
-    "currentFans": 155438079
+    "initialFans": 155438079,
+    "currentFans": 0
   },
   {
     "name": "motbob",
-    "initialFans": 101969606,
-    "currentFans": 142908071
-  },
-  {
-    "name": "Keeves",
-    "initialFans": 86018162,
-    "currentFans": 122586615
+    "initialFans": 142908071,
+    "currentFans": 0
   },
   {
     "name": "SHG",
-    "initialFans": 69722363,
-    "currentFans": 124270163
+    "initialFans": 124270163,
+    "currentFans": 0
   },
   {
-    "name": "Vetala",
-    "initialFans": 88050683,
-    "currentFans": 118599120
+    "name": "Keeves",
+    "initialFans": 122586615,
+    "currentFans": 0
   },
   {
     "name": "zee",
-    "initialFans": 94792190,
-    "currentFans": 118978625
+    "initialFans": 118978625,
+    "currentFans": 0
   },
   {
-    "name": "tzyy",
-    "initialFans": 61791213,
-    "currentFans": 118375546
+    "name": "Vetala",
+    "initialFans": 118599120,
+    "currentFans": 0
   },
   {
     "name": "Bagel",
-    "initialFans": 81968999,
-    "currentFans": 112447158
+    "initialFans": 112447158,
+    "currentFans": 0
   },
   {
     "name": "crabitalism",
-    "initialFans": 77230535,
-    "currentFans": 104746272
-  },
-  {
-    "name": "kaycey",
-    "initialFans": 62272548,
-    "currentFans": 97133726
-  },
-  {
-    "name": "Xariesz",
-    "initialFans": 62449286,
-    "currentFans": 95433437
+    "initialFans": 104746272,
+    "currentFans": 0
   },
   {
     "name": "Fabino",
-    "initialFans": 62319022,
-    "currentFans": 98949549
+    "initialFans": 98949549,
+    "currentFans": 0
+  },
+  {
+    "name": "kaycey",
+    "initialFans": 97133726,
+    "currentFans": 0
+  },
+  {
+    "name": "Xariesz",
+    "initialFans": 95433437,
+    "currentFans": 0
   },
   {
     "name": "YukariEX",
-    "initialFans": 44615240,
-    "currentFans": 90425686
+    "initialFans": 90425686,
+    "currentFans": 0
   },
   {
     "name": "Junyuu",
-    "initialFans": 60654413,
-    "currentFans": 89167589
-  },
-  {
-    "name": "shadow",
-    "initialFans": 48889407,
-    "currentFans": 88007330
+    "initialFans": 89167589,
+    "currentFans": 0
   },
   {
     "name": "Serac",
-    "initialFans": 58220853,
-    "currentFans": 88088345
+    "initialFans": 88088345,
+    "currentFans": 0
   },
   {
-    "name": "Zeyina",
-    "initialFans": 56771595,
-    "currentFans": 74192206
+    "name": "shadow",
+    "initialFans": 88007330,
+    "currentFans": 0
   },
   {
     "name": "HyuzShowSpeed",
-    "initialFans": 43456724,
-    "currentFans": 81217690
+    "initialFans": 81217690,
+    "currentFans": 0
   },
   {
     "name": "Biggiebudeater",
-    "initialFans": 38627740,
-    "currentFans": 77654121
-  },
-  {
-    "name": "funkyfisher",
-    "initialFans": 55018618,
-    "currentFans": 71273685
-  },
-  {
-    "name": "Cameronbear",
-    "initialFans": 49382912,
-    "currentFans": 69361170
+    "initialFans": 77654121,
+    "currentFans": 0
   },
   {
     "name": "Yoseph",
-    "initialFans": 47591713,
-    "currentFans": 77201339
+    "initialFans": 77201339,
+    "currentFans": 0
   },
   {
     "name": "Tymonji",
-    "initialFans": 36801562,
-    "currentFans": 70272165
+    "initialFans": 70272165,
+    "currentFans": 0
   },
   {
-    "name": "Consushi",
-    "initialFans": 48497558,
-    "currentFans": 59610191
+    "name": "Cameronbear",
+    "initialFans": 69361170,
+    "currentFans": 0
   },
   {
     "name": "MAO",
-    "initialFans": 36034187,
-    "currentFans": 66251143
+    "initialFans": 66251143,
+    "currentFans": 0
   },
   {
     "name": "loonafreya",
-    "initialFans": 32277656,
-    "currentFans": 64095059
+    "initialFans": 64095059,
+    "currentFans": 0
   },
   {
     "name": "Pogka",
-    "initialFans": 28928498,
-    "currentFans": 58486709
+    "initialFans": 58486709,
+    "currentFans": 0
   },
   {
     "name": "eric",
-    "initialFans": 30608954,
-    "currentFans": 57850255
+    "initialFans": 57850255,
+    "currentFans": 0
   },
   {
     "name": "Xvious",
-    "initialFans": 20750818,
-    "currentFans": 51142323
+    "initialFans": 51142323,
+    "currentFans": 0
   },
   {
     "name": "lie",
-    "initialFans": 12970447,
-    "currentFans": 40911232
+    "initialFans": 40911232,
+    "currentFans": 0
+  },
+  {
+    "name": "Carrot",
+    "initialFans": 97781113,
+    "currentFans": 0
+  },
+  {
+    "name": "Hilaos",
+    "initialFans": 68912133,
+    "currentFans": 0
   }
 ]
