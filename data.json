@@ -2,42 +2,42 @@
   {
     "name": "Aerate",
     "initialFans": 155438079,
-    "currentFans": 169744162
+    "currentFans": 169754192
   },
   {
     "name": "KAKO",
     "initialFans": 153495860,
-    "currentFans": 168076266
+    "currentFans": 169601430
   },
   {
     "name": "Cheek",
     "initialFans": 150229874,
-    "currentFans": 166411197
+    "currentFans": 167830108
   },
   {
     "name": "motbob",
     "initialFans": 142908071,
-    "currentFans": 157997101
+    "currentFans": 158007258
   },
   {
     "name": "Keeves",
     "initialFans": 122586615,
-    "currentFans": 134011794
+    "currentFans": 134932337
   },
   {
     "name": "SHG",
     "initialFans": 124270163,
-    "currentFans": 133502418
+    "currentFans": 134601305
   },
   {
     "name": "Vetala",
     "initialFans": 118599120,
-    "currentFans": 130786090
+    "currentFans": 131234236
   },
   {
     "name": "zee",
     "initialFans": 118978625,
-    "currentFans": 126353989
+    "currentFans": 127462976
   },
   {
     "name": "Bagel",
@@ -62,22 +62,22 @@
   {
     "name": "kaycey",
     "initialFans": 97133726,
-    "currentFans": 109418246
+    "currentFans": 109810519
   },
   {
     "name": "Fabino",
     "initialFans": 98949549,
-    "currentFans": 109014161
-  },
-  {
-    "name": "YukariEX",
-    "initialFans": 90425686,
-    "currentFans": 105848012
+    "currentFans": 109602347
   },
   {
     "name": "Xariesz",
     "initialFans": 95433437,
-    "currentFans": 105757002
+    "currentFans": 106851789
+  },
+  {
+    "name": "YukariEX",
+    "initialFans": 90425686,
+    "currentFans": 106202790
   },
   {
     "name": "shadow",
@@ -87,12 +87,17 @@
   {
     "name": "Serac",
     "initialFans": 88088345,
-    "currentFans": 95350606
+    "currentFans": 95853031
+  },
+  {
+    "name": "loonafreya",
+    "initialFans": 64095059,
+    "currentFans": 91514483
   },
   {
     "name": "HyuzShowSpeed",
     "initialFans": 81217690,
-    "currentFans": 90326595
+    "currentFans": 90620447
   },
   {
     "name": "Junyuu",
@@ -100,34 +105,29 @@
     "currentFans": 90256918
   },
   {
-    "name": "loonafreya",
-    "initialFans": 64095059,
-    "currentFans": 90058054
-  },
-  {
     "name": "Biggiebudeater",
     "initialFans": 77654121,
-    "currentFans": 87445700
+    "currentFans": 89155398
   },
   {
     "name": "Yoseph",
     "initialFans": 77201339,
-    "currentFans": 86424280
+    "currentFans": 86431996
   },
   {
     "name": "Tymonji",
     "initialFans": 70272165,
-    "currentFans": 83633382
+    "currentFans": 84090288
   },
   {
     "name": "MAO",
     "initialFans": 66251143,
-    "currentFans": 75381102
+    "currentFans": 75865760
   },
   {
     "name": "Hilaos",
     "initialFans": 68912133,
-    "currentFans": 74973939
+    "currentFans": 75331031
   },
   {
     "name": "eric",
@@ -142,11 +142,11 @@
   {
     "name": "Xvious",
     "initialFans": 51142323,
-    "currentFans": 52643242
+    "currentFans": 54034920
   },
   {
     "name": "lie",
     "initialFans": 40911232,
-    "currentFans": 49867006
+    "currentFans": 50834542
   }
 ]
