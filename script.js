@@ -1,51 +1,38 @@
-// script.js
-
-// Fetch the leaderboard data
+// Load data from data.json and build leaderboard
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
-    // Calculate fansGained for each player
-    data.forEach(player => {
-      player.fansGained = player.currentFans - player.initialFans;
-    });
+    const tbody = document.querySelector("#leaderboard tbody");
 
-    // Sort by fansGained descending; if 0, sort by currentFans descending
-    data.sort((a, b) => {
-      return (b.fansGained - a.fansGained) || (b.currentFans - a.currentFans);
-    });
+    // Sort by fans descending
+    data.sort((a, b) => b.fans - a.fans);
 
-    // Get the table body element
-    const tableBody = document.querySelector('#leaderboard tbody');
-    tableBody.innerHTML = ''; // Clear existing rows
-
-    // Populate the table
+    // Calculate fans gained as difference from previous day
     data.forEach((player, index) => {
-      const row = document.createElement('tr');
+      const previousFans = player.previousFans ?? 0; // optional fallback
+      player.fansGained = player.fans - previousFans;
+    });
 
-      // Assign medal classes for top 3
-      if (index === 0) row.classList.add('gold');
-      else if (index === 1) row.classList.add('silver');
-      else if (index === 2) row.classList.add('bronze');
+    // Inject rows into the table
+    data.forEach((player, index) => {
+      const row = document.createElement("tr");
 
-      // Fans Gained color: light green if > 0, red if < 0, black otherwise
-      const fansGainedColor = player.fansGained > 0 ? '#0c5f0cff' : '#830202ff';
-      const fansGainedText =
-        player.fansGained > 0
-          ? `+${player.fansGained.toLocaleString()}`
-          : player.fansGained.toLocaleString();
+      // Determine color for fans gained
+      const gained = player.fansGained;
+      let color = "black";
+      if (gained > 0) color = "green";
+      if (gained < 0) color = "red";
 
       row.innerHTML = `
-        <td>${index + 1}</td> <!-- Rank -->
+        <td>${index + 1}</td>
         <td>${player.name}</td>
-        <td>${player.currentFans.toLocaleString()}</td>
-        <td style="color: ${fansGainedColor}; font-weight: bold;">
-          ${fansGainedText}
+        <td>${player.fans.toLocaleString()}</td>
+        <td class="fans-gained" style="color:${color}">
+          ${gained > 0 ? "+" : ""}${gained.toLocaleString()}
         </td>
       `;
 
-      tableBody.appendChild(row);
+      tbody.appendChild(row);
     });
   })
-  .catch(error => {
-    console.error('Error loading leaderboard data:', error);
-  });
+  .catch(error => console.error("Error loading leaderboard:", error));
